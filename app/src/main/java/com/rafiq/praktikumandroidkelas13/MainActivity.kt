@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
         btAdd.setOnClickListener {
 
             var doubleNumber1 = 0.0
-            if (etNumber1.text.toString() == "")
+            if (etNumber1.text.toString() != "")
                 doubleNumber1 = etNumber1.text.toString().toDouble()
 
             var doubleNumber2 = 0.0
-            if (etNumber2.text.toString() == "")
+            if (etNumber2.text.toString() != "")
                 doubleNumber2 = etNumber2.text.toString().toDouble()
 
             val doubleResult = doubleNumber1 + doubleNumber2
@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity() {
         btSub.setOnClickListener {
 
             var doubleNumber1 = 0.0
-            if (etNumber1.text.toString() == "")
+            if (etNumber1.text.toString() != "")
                 doubleNumber1 = etNumber1.text.toString().toDouble()
 
             var doubleNumber2 = 0.0
-            if (etNumber2.text.toString() == "")
+            if (etNumber2.text.toString() != "")
                 doubleNumber2 = etNumber2.text.toString().toDouble()
 
             val doubleResult = doubleNumber1 - doubleNumber2
@@ -55,11 +55,11 @@ class MainActivity : AppCompatActivity() {
         btMul.setOnClickListener {
 
             var doubleNumber1 = 0.0
-            if (etNumber1.text.toString() == "")
+            if (etNumber1.text.toString() != "")
                 doubleNumber1 = etNumber1.text.toString().toDouble()
 
             var doubleNumber2 = 0.0
-            if (etNumber2.text.toString() == "")
+            if (etNumber2.text.toString() != "")
                 doubleNumber2 = etNumber2.text.toString().toDouble()
 
             val doubleResult = doubleNumber1 * doubleNumber2
@@ -70,11 +70,11 @@ class MainActivity : AppCompatActivity() {
         btDiv.setOnClickListener {
 
             var doubleNumber1 = 0.0
-            if (etNumber1.text.toString() == "")
+            if (etNumber1.text.toString() != "")
                 doubleNumber1 = etNumber1.text.toString().toDouble()
 
             var doubleNumber2 = 0.0
-            if (etNumber2.text.toString() == "")
+            if (etNumber2.text.toString() != "")
                 doubleNumber2 = etNumber2.text.toString().toDouble()
 
             val doubleResult = doubleNumber1 / doubleNumber2
