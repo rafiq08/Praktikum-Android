@@ -14,7 +14,7 @@
         android:id="@+id/etNpm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="NPM"
+        android:hint="@string/npm"
         android:layout_marginBottom="8dp"
         android:inputType="number"
         />
@@ -23,7 +23,7 @@
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="@string/name"
         android:layout_marginBottom="8dp"
         android:inputType="textPersonName"
         />
@@ -32,7 +32,7 @@
         android:id="@+id/etIpk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="IPK"
+        android:hint="@string/ipk"
         android:layout_marginBottom="8dp"
         android:inputType="numberDecimal"
         />
@@ -41,7 +41,7 @@
         android:id="@+id/etPhoneNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone Number"
+        android:hint="@string/phone_number"
         android:layout_marginBottom="8dp"
         android:inputType="phone"
         />
@@ -50,14 +50,20 @@
         android:id="@+id/btSend1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send With Intent"
+        android:text="@string/send_with_intent"
         />
 
     <Button
         android:id="@+id/btSend2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send With Intent Parcelable"
+        android:text="@string/send_with_intent_parcelable"
         />
 
+    <Button
+        android:id="@+id/btDial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call"
+        />
 </LinearLayout>

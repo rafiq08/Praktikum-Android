@@ -1,6 +1,7 @@
 package com.rafiq.praktikumandroidkelas13
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,6 +18,7 @@ class StudentActivity : AppCompatActivity() {
         val etPhoneNumber = findViewById<EditText>(R.id.etPhoneNumber)
         val btSend1 = findViewById<Button>(R.id.btSend1)
         val btSend2 = findViewById<Button>(R.id.btSend2)
+        val btDial = findViewById<Button>(R.id.btDial)
 
         btSend1.setOnClickListener {
 
@@ -49,5 +51,11 @@ class StudentActivity : AppCompatActivity() {
             startActivity(iParcelable)
         }
 
+        btDial.setOnClickListener {
+            val phoneNumber = etPhoneNumber.text.toString()
+
+            val dialIntent = Intent(Intent.ACTION_DIAL,Uri.parse("tel:$phoneNumber"))
+            startActivity(dialIntent)
+        }
     }
 }
