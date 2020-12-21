@@ -64,7 +64,6 @@ class StudentActivity : AppCompatActivity() {
 
         btDial.setOnClickListener {
             val phoneNumber = etPhoneNumber.text.toString()
-
             val dialIntent = Intent(Intent.ACTION_DIAL,Uri.parse("tel:$phoneNumber"))
             startActivity(dialIntent)
         }
